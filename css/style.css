@@ -626,7 +626,7 @@ border-radius: 2px;
   position: absolute;
   top: 50%;
   left: 16px;
-  transform: translateY(-50%);
+  /* transform: translateY(-50%); */
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -668,6 +668,7 @@ textarea {
     margin-top: 8px;
     font-size: 12px;
     align-items: center;
+    line-height: 16px;
     color: var(--header-field-color);
 }
 
@@ -679,6 +680,7 @@ textarea {
 	margin-top: 0;
 	margin-bottom: 0;
 	color: var(--brand-color);
+  text-decoration: underline;
 }
 
 .field-input:focus,
@@ -753,9 +755,11 @@ textarea {
   padding-left: 16px;
   border: 1px solid #ffffff;
   border-radius: 4px;
+  background-color: transparent;
+  color: #ffffff;
 }
 
-.footer-subscribe input::placeholder {
+.footer-subscribe-label input::placeholder {
   color: #ffffff;
 }
 
